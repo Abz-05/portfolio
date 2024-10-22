@@ -1,6 +1,6 @@
 const hobbyDescriptions = {
     music: "I love listening to various genres of music, from classical to pop. Music inspires me and keeps me motivated.",
-    dance: "Dancing is my way of expressing joy and creativity. I enjoy various styles, including salsa and hip-hop.",
+    dance: "Dancing is my way of expressing joy and creativity. I enjoy various styles, including classical and hip-hop.",
     makeup: "As a makeup enthusiast, I love experimenting with different looks and techniques to enhance beauty.",
     designing: "Designing allows me to bring my ideas to life through creativity and visual storytelling.",
     reading: "Reading books is a passion of mine. I enjoy diving into different genres and exploring new worlds."
