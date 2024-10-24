@@ -750,7 +750,6 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Fixed syntax */
 }
-
 /* Navbar */
 #menu-icon {
     display: block; /* This may be overridden in media queries */
@@ -858,8 +857,11 @@ footer {
     .home-img img {
         width: 80vw; /* Increase image width on smaller screens */
     }
-
+    #menu-icon {
+        display: block;
+    }
     .navbar {
+        display: block; /* Ensure it displays on smaller screens */
         width: 100%; /* Make navbar full-width on smaller screens */
         padding: 1rem 1%; /* Reduce padding on smaller screens */
     }
