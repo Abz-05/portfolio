@@ -1,6 +1,37 @@
+// Get elements
+const menuIcon = document.getElementById('menu-icon');
+const mobileMenuBar = document.querySelector('.mobile-menu-bar');
+
+// Function to toggle the mobile menu
+function toggleMenu() {
+    if (mobileMenuBar.style.display === 'flex') {
+        mobileMenuBar.style.display = 'none'; // Hide the menu
+    } else {
+        mobileMenuBar.style.display = 'flex'; // Show the menu
+    }
+}
+
+// Add click event listener to the menu icon
+menuIcon.addEventListener('click', toggleMenu);
+
+// Optional: Hide the mobile menu when a link is clicked
+const mobileMenuLinks = document.querySelectorAll('.mobile-menu-bar a');
+mobileMenuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        // Hide mobile menu after selection
+        mobileMenuBar.style.display = 'none';
+
+        // Add glow effect on click
+        link.classList.add('glow');
+        setTimeout(() => {
+            link.classList.remove('glow'); // Remove glow effect after a short duration
+        }, 300); // Duration in milliseconds
+    });
+});
+
 const hobbyDescriptions = {
     music: "I love listening to various genres of music, from classical to pop. Music inspires me and keeps me motivated.",
-    dance: "Dancing is my way of expressing joy and creativity. I enjoy various styles, including classical and hip-hop.",
+    dance: "Dancing is my way of expressing joy and creativity. I enjoy various styles, including salsa and hip-hop.",
     makeup: "As a makeup enthusiast, I love experimenting with different looks and techniques to enhance beauty.",
     designing: "Designing allows me to bring my ideas to life through creativity and visual storytelling.",
     reading: "Reading books is a passion of mine. I enjoy diving into different genres and exploring new worlds."
@@ -10,7 +41,7 @@ const hobbies = document.querySelectorAll('.hobby');
 const hobbyDescription = document.getElementById('hobby-description');
 
 hobbies.forEach(hobby => {
-    hobby.addEventListener('click', () => {
+    const handleClick = () => {
         const hobbyId = hobby.id;
         hobbyDescription.innerHTML = `<strong>${hobby.innerText}</strong>: ${hobbyDescriptions[hobbyId]}`;
         hobbyDescription.style.opacity = 1; // Show the description
@@ -18,8 +49,14 @@ hobbies.forEach(hobby => {
         // Scroll to the hobbies section smoothly
         const hobbiesSection = document.getElementById('hobbies');
         hobbiesSection.scrollIntoView({ behavior: 'smooth' });
-    });
+    };
+
+    hobby.addEventListener('click', handleClick);
+
+    // Handle touch events for mobile devices
+    hobby.addEventListener('touchstart', handleClick);
 });
+
 const skillCertificates = {
     programmer: {
         text: "Certificates: 10",
@@ -52,18 +89,21 @@ const skillCertificates = {
         description: "The NPTEL Silver Medal in Python for Data Science reflects my commitment to mastering advanced data science concepts. It highlights my expertise in applying Python for analytics."
     }
 };
+
 const skills = document.querySelectorAll('.skill');
 const skillDescription = document.getElementById('skill-description');
 
 skills.forEach(skill => {
-    skill.addEventListener('click', () => {
+    const handleSkillClick = () => {
         // Hide all certificate images
         const allImages = document.querySelectorAll('.certificate-images');
         allImages.forEach(images => images.style.display = 'none');
 
         // Show the corresponding certificate images
         const certificateImages = skill.querySelector('.certificate-images');
-        certificateImages.style.display = 'flex'; // Use flex to show images in a column
+        if (certificateImages) {
+            certificateImages.style.display = 'flex'; // Use flex to show images in a column
+        }
 
         // Get the skill name from the clicked element
         const skillName = skill.id; // Assuming each skill div has an id matching the key in skillCertificates
@@ -75,5 +115,10 @@ skills.forEach(skill => {
         // Scroll to the skills section smoothly
         const skillsSection = document.getElementById('skills');
         skillsSection.scrollIntoView({ behavior: 'smooth' });
-    });
+    };
+
+    skill.addEventListener('click', handleSkillClick);
+
+    // Handle touch events for mobile devices
+    skill.addEventListener('touchstart', handleSkillClick);
 });
