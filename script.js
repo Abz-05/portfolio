@@ -31,7 +31,7 @@ mobileMenuLinks.forEach(link => {
 
 const hobbyDescriptions = {
     music: "I love listening to various genres of music, from classical to pop. Music inspires me and keeps me motivated.",
-    dance: "Dancing is my way of expressing joy and creativity. I enjoy various styles, including salsa and hip-hop.",
+    dance: "Dancing is my way of expressing joy and creativity. I enjoy various styles, including classical and hip-hop.",
     makeup: "As a makeup enthusiast, I love experimenting with different looks and techniques to enhance beauty.",
     designing: "Designing allows me to bring my ideas to life through creativity and visual storytelling.",
     reading: "Reading books is a passion of mine. I enjoy diving into different genres and exploring new worlds."
@@ -61,7 +61,7 @@ const skillCertificates = {
     programmer: {
         text: "Certificates: 10",
         img: "path/to/programmer_certificate.jpg",
-        description: "I excel in Python and C, developing efficient solutions to complex problems. My focus is on building software that meets user needs while continuously improving my coding abilities."
+        description: "I am a beginner in programming with foundational knowledge in Python and C. I’ve earned certifications in these languages, marking the first steps toward my goal of developing efficient solutions and creating software that meets user needs. I’m eager to continue improving my skills and building my coding abilities along the way."
     },
     "social-worker": {
         text: "Certificates: 1",
@@ -71,12 +71,12 @@ const skillCertificates = {
     "analytics-designer": {
         text: "Certificates: 2",
         img: "path/to/analytics_designer_certificate.jpg",
-        description: "I specialize in crafting clear, impactful data visualizations using tools like Power BI. My designs help users make data-driven decisions with ease and precision."
+        description: "I’m a beginner in data visualization, learning to create clear and effective dashboards in Power BI. With a passion for design, I’m working towards building dashboards that make data easy to understand and use. My goal is to help users make smart, data-driven decisions in the future."
     },
     "data-handling": {
         text: "Certificates: 2",
         img: "path/to/data_handling_certificate.jpg",
-        description: "Ensuring data accuracy and integrity is my top priority. I manage large datasets efficiently, from collection to analysis, guaranteeing reliable outcomes."
+        description: "As an aspiring analytical designer, I’m taking my first steps in managing and analyzing data accurately. I’m dedicated to learning more about databases and improving my skills to ensure reliable results in the future."
     },
     sportsperson: {
         text: "Certificates: 3",
