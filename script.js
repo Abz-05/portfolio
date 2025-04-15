@@ -1,34 +1,24 @@
-// Get elements
+
 const menuIcon = document.getElementById('menu-icon');
 const mobileMenuBar = document.querySelector('.mobile-menu-bar');
-
-// Function to toggle the mobile menu
 function toggleMenu() {
     if (mobileMenuBar.style.display === 'flex') {
-        mobileMenuBar.style.display = 'none'; // Hide the menu
+        mobileMenuBar.style.display = 'none'; 
     } else {
-        mobileMenuBar.style.display = 'flex'; // Show the menu
+        mobileMenuBar.style.display = 'flex'; 
     }
 }
-
-// Add click event listener to the menu icon
 menuIcon.addEventListener('click', toggleMenu);
-
-// Optional: Hide the mobile menu when a link is clicked
 const mobileMenuLinks = document.querySelectorAll('.mobile-menu-bar a');
 mobileMenuLinks.forEach(link => {
     link.addEventListener('click', () => {
-        // Hide mobile menu after selection
         mobileMenuBar.style.display = 'none';
-
-        // Add glow effect on click
         link.classList.add('glow');
         setTimeout(() => {
-            link.classList.remove('glow'); // Remove glow effect after a short duration
-        }, 300); // Duration in milliseconds
+            link.classList.remove('glow'); 
+        }, 300); 
     });
 });
-
 const hobbyDescriptions = {
     music: "I love listening to various genres of music, from classical to pop. Music inspires me and keeps me motivated.",
     dance: "Dancing is my way of expressing joy and creativity. I enjoy various styles, including classical and hip-hop.",
@@ -36,27 +26,19 @@ const hobbyDescriptions = {
     designing: "Designing allows me to bring my ideas to life through creativity and visual storytelling.",
     reading: "Reading books is a passion of mine. I enjoy diving into different genres and exploring new worlds."
 };
-
 const hobbies = document.querySelectorAll('.hobby');
 const hobbyDescription = document.getElementById('hobby-description');
-
 hobbies.forEach(hobby => {
     const handleClick = () => {
         const hobbyId = hobby.id;
         hobbyDescription.innerHTML = `<strong>${hobby.innerText}</strong>: ${hobbyDescriptions[hobbyId]}`;
-        hobbyDescription.style.opacity = 1; // Show the description
-
-        // Scroll to the hobbies section smoothly
+        hobbyDescription.style.opacity = 1; 
         const hobbiesSection = document.getElementById('hobbies');
         hobbiesSection.scrollIntoView({ behavior: 'smooth' });
     };
-
     hobby.addEventListener('click', handleClick);
-
-    // Handle touch events for mobile devices
     hobby.addEventListener('touchstart', handleClick);
 });
-
 const skillCertificates = {
     programmer: {
         text: "Certificates: 10",
@@ -91,44 +73,30 @@ const skillCertificates = {
     "Datathon": {
         text: "Certificates: 1",
         img: "path/to/Datathon.jpg",
-        description: "Runner-Up | TSM Intra-College Datathon 2025--Achieved Runner-Up as part of Team Crazy Coders in a competitive data science showdown at TSM, while also securing 5th place in the Yukti TSM event. This experience underscores the strength of teamwork, mentorship, and applied data expertise."
+        description: "Runner-Up-[5th-Place] | TSM Intra-College Datathon 2025--Achieved Runner-Up as part of Team Crazy Coders in a competitive data science showdown at TSM, while also securing 5th place in the Yukti TSM event. This experience underscores the strength of teamwork, mentorship, and applied data expertise."
     },
     "Gameathon": {
         text: "Certificates: 1",
         img: "path/to/GAME_A_THON.jpg",
-        description: "Game-a-thon ‘25 | SRM Institute of Science and Technology--Earned a Certificate of Participation in a dynamic coding and gaming challenge organized by ArrowDev Club at SRM Vadapalani. This event honed my innovative problem-solving skills and spotlighted my enthusiasm for creative tech solutions."
+        description: "Game-a-thon ‘25-[3rd-Place] | SRM Institute of Science and Technology--Earned a Certificate of Participation in a dynamic coding and gaming challenge organized by ArrowDev Club at SRM Vadapalani. This event honed my innovative problem-solving skills and spotlighted my enthusiasm for creative tech solutions."
     }
 };
-
 const skills = document.querySelectorAll('.skill');
 const skillDescription = document.getElementById('skill-description');
-
 skills.forEach(skill => {
     const handleSkillClick = () => {
-        // Hide all certificate images
         const allImages = document.querySelectorAll('.certificate-images');
         allImages.forEach(images => images.style.display = 'none');
-
-        // Show the corresponding certificate images
         const certificateImages = skill.querySelector('.certificate-images');
         if (certificateImages) {
-            certificateImages.style.display = 'flex'; // Use flex to show images in a column
+            certificateImages.style.display = 'flex'; 
         }
-
-        // Get the skill name from the clicked element
-        const skillName = skill.id; // Assuming each skill div has an id matching the key in skillCertificates
-
-        // Update description text
+        const skillName = skill.id; 
         skillDescription.innerHTML = `<strong>${skill.innerText}</strong>: ${skillCertificates[skillName].description} See above for certificates.`;
-        skillDescription.style.opacity = 1; // Show the description
-
-        // Scroll to the skills section smoothly
+        skillDescription.style.opacity = 1; 
         const skillsSection = document.getElementById('skills');
         skillsSection.scrollIntoView({ behavior: 'smooth' });
     };
-
     skill.addEventListener('click', handleSkillClick);
-
-    // Handle touch events for mobile devices
     skill.addEventListener('touchstart', handleSkillClick);
 });
