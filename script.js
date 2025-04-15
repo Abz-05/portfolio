@@ -87,12 +87,12 @@ const skillCertificates = {
         text: "Certificates: 1",
         img: "path/to/nptel_certificate.jpg",
         description: "The NPTEL Silver Medal in Python for Data Science reflects my commitment to mastering advanced data science concepts. It highlights my expertise in applying Python for analytics."
-    }
+    }, // Comma added here
     "Datathon": {
         text: "Certificates: 1",
         img: "path/to/Datathon.jpg",
         description: "Runner-Up | TSM Intra-College Datathon 2025--Achieved Runner-Up as part of Team Crazy Coders in a competitive data science showdown at TSM, while also securing 5th place in the Yukti TSM event. This experience underscores the strength of teamwork, mentorship, and applied data expertise."
-    }
+    }, // Comma added here
     "Gameathon": {
         text: "Certificates: 1",
         img: "path/to/GAME_A_THON.jpg",
@@ -119,8 +119,14 @@ skills.forEach(skill => {
         const skillName = skill.id; // Assuming each skill div has an id matching the key in skillCertificates
 
         // Update description text
-        skillDescription.innerHTML = `<strong>${skill.innerText}</strong>: ${skillCertificates[skillName].description} See above for certificates.`;
-        skillDescription.style.opacity = 1; // Show the description
+        if (skillCertificates[skillName]) {
+            skillDescription.innerHTML = `<strong>${skill.innerText}</strong>: ${skillCertificates[skillName].description} See above for certificates.`;
+            skillDescription.style.opacity = 1; // Show the description
+        } else {
+            // Optionally handle cases where the skill does not exist in the object
+            skillDescription.innerHTML = `<strong>${skill.innerText}</strong>: No description available.`;
+            skillDescription.style.opacity = 1;
+        }
 
         // Scroll to the skills section smoothly
         const skillsSection = document.getElementById('skills');
@@ -128,7 +134,6 @@ skills.forEach(skill => {
     };
 
     skill.addEventListener('click', handleSkillClick);
-
     // Handle touch events for mobile devices
     skill.addEventListener('touchstart', handleSkillClick);
 });
