@@ -835,7 +835,7 @@ span {
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.5); 
   transition: text-shadow 0.5s ease-in-out; 
   margin: 0 auto; 
-  display: block; /
+  display: block; 
   width: fit-content; 
 }
 
@@ -846,134 +846,133 @@ span {
     0,
     0.5
   ); 
-  padding: 40px; /* Increased padding for spacing inside the container */
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 0 20px rgba(0, 255, 255, 0.7), 0 0 40px rgba(0, 255, 255, 0.5); /* Glowing effect */
-  border: 2px solid rgba(0, 255, 255, 0.5); /* Glowing border */
-  transition: box-shadow 0.5s ease-in-out; /* Smooth transition for glow effect */
-  margin: 0 auto; /* Center the container horizontally */
-  display: flex; /* Use flexbox for centering */
-  flex-direction: column; /* Stack items vertically */
-  align-items: center; /* Center items horizontally */
-  width: 600px; /* Set the width of the container */
+  padding: 40px; 
+  border-radius: 10px; 
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.7), 0 0 40px rgba(0, 255, 255, 0.5); 
+  border: 2px solid rgba(0, 255, 255, 0.5); 
+  transition: box-shadow 0.5s ease-in-out; 
+  margin: 0 auto; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  width: 600px; 
 }
 
 .contact-item {
-  font-size: 1.5rem; /* Increased font size for links */
-  color: #fff; /* White text color */
-  margin: 10px 0; /* Space between items */
-  display: flex; /* Use flexbox for icon and text alignment */
-  align-items: center; /* Center items vertically */
+  font-size: 1.5rem; 
+  color: #fff; 
+  margin: 10px 0; 
+  display: flex; 
+  align-items: center; 
 }
 
 .contact-item a {
-  color: white; /* Change link color to white */
-  text-decoration: none; /* Remove underline from links */
-  transition: color 0.3s ease; /* Smooth transition for color change */
-}
+  color: white; 
+  text-decoration: none; 
+  transition: color 0.3s ease; 
 
 .contact-item a:hover {
-  color: #00ffee; /* Optional: Change color on hover for better visibility */
+  color: #00ffee; 
 }
 
 .contact-container:hover {
-  box-shadow: 0 0 40px rgba(0, 255, 255, 1), 0 0 80px rgba(0, 255, 255, 0.7); /* Increased glow effect on hover */
+  box-shadow: 0 0 40px rgba(0, 255, 255, 1), 0 0 80px rgba(0, 255, 255, 0.7); 
 }
 
 .contact-item i {
-  font-size: 3rem; /* Increased font size for icons */
-  margin-right: 15px; /* Add margin between icon and text */
-  color: #fff; /* White text color */
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Initial glow effect */
-  transition: text-shadow 0.5s ease-in-out; /* Smooth transition for glow effect */
+  font-size: 3rem; 
+  margin-right: 15px; 
+  color: #fff; 
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5); 
+  transition: text-shadow 0.5s ease-in-out; 
 }
 
 .contact-item i:hover {
-  text-shadow: 0 0 20px rgba(0, 255, 255, 1); /* Increased glow effect on hover */
+  text-shadow: 0 0 20px rgba(0, 255, 255, 1); 
 }
 
-/* Media Queries for Responsiveness */
+
 @media (max-width: 1024px) {
   .contact-container {
-    width: 80%; /* Use a percentage width for larger screens */
-    padding: 30px; /* Reduce padding for larger screens */
+    width: 80%; /
+    padding: 30px; 
   }
 }
 
 @media (max-width: 768px) {
   .contact-title {
-    font-size: 2.5rem; /* Decrease font size for smaller screens */
+    font-size: 2.5rem; 
   }
 
   .contact-container {
-    width: 90%; /* Use a percentage width for smaller screens */
-    padding: 20px; /* Reduce padding */
+    width: 90%; 
+    padding: 20px; 
   }
 
   .contact-item {
-    font-size: 1.2rem; /* Decrease font size for smaller screens */
+    font-size: 1.2rem; 
   }
 
   .contact-item i {
-    font-size: 2rem; /* Decrease icon size for smaller screens */
+    font-size: 2rem; 
   }
 }
 
 @media (max-width: 480px) {
   .contact-title {
-    font-size: 2rem; /* Further decrease font size for very small screens */
+    font-size: 2rem; 
   }
 
   .contact-item {
-    font-size: 1rem; /* Further decrease font size for very small screens */
+    font-size: 1rem; 
   }
 
   .contact-item i {
-    font-size: 1.5rem; /* Further decrease icon size for very small screens */
+    font-size: 1.5rem; 
   }
 }
 .footer {
-  background-color: rgba(0, 0, 0, 0.7); /* Dark background for contrast */
-  color: white; /* White text color */
-  text-align: center; /* Center the text */
-  padding: 40px; /* Increased padding for more height */
-  position: relative; /* Positioning */
-  bottom: 0; /* Align to the bottom */
-  width: 100%; /* Full width */
-  font-size: 1.5rem; /* Increased font size */
+  background-color: rgba(0, 0, 0, 0.7); 
+  color: white; 
+  text-align: center; 
+  padding: 40px; 
+  position: relative; 
+  bottom: 0; 
+  width: 100%; 
+  font-size: 1.5rem; 
 }
 
 .footer-content {
-  max-width: 1200px; /* Optional: Limit the width of the content */
-  margin: 0 auto; /* Center the content */
+  max-width: 1200px; 
+  margin: 0 auto; 
 }
 
-/* Media Queries for Responsiveness */
+
 @media (max-width: 1024px) {
   .footer {
-    padding: 30px; /* Slightly reduce padding for larger tablets */
-    font-size: 1.4rem; /* Slightly decrease font size */
+    padding: 30px; 
+    font-size: 1.4rem; 
   }
 }
 
 @media (max-width: 768px) {
   .footer {
-    padding: 20px; /* Reduce padding for smaller screens */
-    font-size: 1.2rem; /* Decrease font size for better fit */
+    padding: 20px; 
+    font-size: 1.2rem; 
   }
 
   .footer-content {
-    padding: 0 15px; /* Add some horizontal padding for content */
+    padding: 0 15px; 
   }
 }
 
 @media (max-width: 480px) {
   .footer {
-    padding: 15px; /* Further reduce padding for very small screens */
-    font-size: 1rem; /* Further decrease font size for better fit */
+    padding: 15px; 
+    font-size: 1rem; /
   }
 
   .footer-content {
-    padding: 0 10px; /* Adjust horizontal padding for very small screens */
+    padding: 0 10px; 
   }
 }
