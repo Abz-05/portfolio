@@ -88,6 +88,16 @@ const skillCertificates = {
         img: "path/to/nptel_certificate.jpg",
         description: "The NPTEL Silver Medal in Python for Data Science reflects my commitment to mastering advanced data science concepts. It highlights my expertise in applying Python for analytics."
     }
+    "nptel-silver-medal": {
+        text: "Certificates: 1",
+        img: "path/to/Datathon.jpg",
+        description: "The NPTEL Silver Medal in Python for Data Science reflects my commitment to mastering advanced data science concepts. It highlights my expertise in applying Python for analytics."
+    }
+    "nptel-silver-medal": {
+        text: "Certificates: 1",
+        img: "path/to/GAME_A_THON.jpg",
+        description: "The NPTEL Silver Medal in Python for Data Science reflects my commitment to mastering advanced data science concepts. It highlights my expertise in applying Python for analytics."
+    }
 };
 
 const skills = document.querySelectorAll('.skill');
