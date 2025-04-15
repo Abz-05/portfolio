@@ -1,204 +1,340 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfolio</title>
-        <link rel="stylesheet" href="styles.css">
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    </head>
-    <body>
-        <header class="header">
-            <a href="#home" class="logo">Abzana <span>VARHATH</span></a>
-            <i class='bx bx-menu' id="menu-icon"></i>
-        
-            <nav class="navbar">
-                <a href="#home" class="active">HOME</a>
-                <a href="#hobbies">HOBBIES</a>
-                <a href="#skills">SKILLS</a>
-                <a href="#interests">INTERESTS</a>
-                <a href="#contact">CONTACT</a>
-            </nav>
-        
-            <!-- Mobile Menu Bar -->
-            <div class="mobile-menu-bar">
-                <a href="#home" class="active">HOME</a>
-                <a href="#hobbies">HOBBIES</a>
-                <a href="#skills">SKILLS</a>
-                <a href="#interests">INTERESTS</a>
-                <a href="#contact">CONTACT</a>
-            </div>
-        </header>
-                  
-        <section class="home" id="home">
-            <div class="home-content">
-                <h1>Hi, It's <span>Abzana</span></h1>
-                <h3 class="text-animation">I'm a <span id="animated-text"></span></h3>
-                <br>
-                <p>I am a creative individual skilled in web design, visual arts, tutoring, poster design, programming, and content writing. I enjoy combining creativity with technology to make learning engaging and clear. Through my work, I help students understand complex ideas by bringing them to life in simple, relatable ways. My goal is to inspire curiosity and make learning enjoyable for everyone I teach.</p>
-                <div class="social-icons">
-                    <a href="#"><i class='bx bxl-linkedin'></i></a>
-                    <a href="#"><i class='bx bxl-github'></i></a>
-                    <a href="#"><i class='bx bxl-gmail'></i></a>
-                </div>
-                <div class="btn-group">
-                    <a href="#" class="btn">Let's Connect</a>
-                    <a href="#contact" class="btn">Reach-Out</a>
-                </div>
-            </div>
-                <div class="home-img">
-                    <img src="image2.jpg" alt="">
-                </div>
-        </section><br><br>
-        <div class="hobbies-wrapper">
-            <section class="hobbies" id="hobbies">
-                <br><br><br><br><br><br><br>
-                <br><h2>My Hobbies</h2>
-                <div class="hobbies-container">
-                    <div class="hobby" id="music"><span>🎶 Music</span></div>
-                    <div class="hobby" id="dance"><span>💃 Dance</span></div>
-                    <div class="hobby" id="makeup"><span>💄 Makeup Enthusiast</span></div>
-                    <div class="hobby" id="designing"><span>🎨 Designing</span></div>
-                    <div class="hobby" id="reading"><span>📚 Reading Books</span></div>
-                </div>
-                <div class="hobby-description" id="hobby-description">
-                    <p>Select a hobby to see the description.</p>
-                </div>
-            </section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#home" class="logo">Abzana <span>VARHATH</span></a>
+      <i class="bx bx-menu" id="menu-icon"></i>
+      <nav class="navbar">
+        <a href="#home" class="active">HOME</a>
+        <a href="#hobbies">HOBBIES</a>
+        <a href="#skills">SKILLS</a>
+        <a href="#interests">INTERESTS</a>
+        <a href="#contact">CONTACT</a>
+      </nav>
+      <div class="mobile-menu-bar">
+        <a href="#home" class="active">HOME</a>
+        <a href="#hobbies">HOBBIES</a>
+        <a href="#skills">SKILLS</a>
+        <a href="#projects-section">PROJECTS</a>
+        <a href="#interests">INTERESTS</a>
+        <a href="#contact">CONTACT</a>
+      </div>
+    </header>
+    <section class="home" id="home">
+      <div class="home-content">
+        <h1>Hi, It's <span>Abzana</span></h1>
+        <h3 class="text-animation">I'm a <span id="animated-text"></span></h3>
+        <br />
+        <p>
+          I am a creative individual skilled in web design, visual arts,
+          tutoring, poster design, programming, and content writing. I enjoy
+          combining creativity with technology to make learning engaging and
+          clear. Through my work, I help students understand complex ideas by
+          bringing them to life in simple, relatable ways. My goal is to inspire
+          curiosity and make learning enjoyable for everyone I teach.
+        </p>
+        <div class="social-icons">
+          <a href="#"><i class="bx bxl-linkedin"></i></a>
+          <a href="#"><i class="bx bxl-github"></i></a>
+          <a href="#"><i class="bx bxl-gmail"></i></a>
         </div>
-       <section class="skills" id="skills">
-  <br><br><br><br><br><br><br><br><br><br>
-  <h2 class="skills-title">My Skills</h2>
-  <div class="skills-container">
-    <div class="skill" id="programmer">
-      <span>👨‍💻 Programmer</span>
-      <div class="certificate-images" style="display: none;">
-        <img src="basics of python.jpg" alt="Programmer Certificate" class="certificate-img" />
-        <img src="BASICS OF R PROGRAMMING.jpg" alt="Programmer Certificate" class="certificate-img" />
-        <img src="CYBER SECURITY.jpg" alt="Programmer Certificate" class="certificate-img" />
-        <img src="develop solutions with azure ai document intelligence.jpg" alt="Programmer Certificate" class="certificate-img" />
-        <img src="GUVI_PYTHON.jpg" alt="Programmer Certificate" class="certificate-img" />
-        <img src="GuviCertification - CHATGPT FOR EVERYONE.jpg" alt="Programmer Certificate" class="certificate-img" />
-        <img src="introduction to Agile methodology.jpg" alt="Programmer Certificate" class="certificate-img" />
-        <img src="oops_page-0001.jpg" alt="Programmer Certificate" class="certificate-img" />
-        <img src="python zero to hero.jpg" alt="Programmer Certificate" class="certificate-img" />
-        <img src="software engineering and Agile software development.jpg" alt="Programmer Certificate" class="certificate-img" />
+        <div class="btn-group">
+          <a href="#" class="btn">Let's Connect</a>
+          <a href="#contact" class="btn">Reach-Out</a>
+        </div>
       </div>
-    </div>
-    <div class="skill" id="social-worker">
-      <span>🤝 Social Worker</span>
-      <div class="certificate-images" style="display: none;">
-        <img src="ekta resource centre for women (social internship).jpg" alt="Social Worker Certificate" class="certificate-img" />
+      <div class="home-img">
+        <img src="Abz.jpg" alt="" />
       </div>
+    </section>
+    <br /><br />
+    <div class="hobbies-wrapper">
+      <section class="hobbies" id="hobbies">
+        <br /><br /><br /><br /><br /><br /><br />
+        <br />
+        <h2>My Hobbies</h2>
+        <div class="hobbies-container">
+          <div class="hobby" id="music"><span>🎶 Music</span></div>
+          <div class="hobby" id="dance"><span>💃 Dance</span></div>
+          <div class="hobby" id="makeup"><span>💄 Makeup Enthusiast</span></div>
+          <div class="hobby" id="designing"><span>🎨 Designing</span></div>
+          <div class="hobby" id="reading"><span>📚 Reading Books</span></div>
+        </div>
+        <div class="hobby-description" id="hobby-description">
+          <p>Select a hobby to see the description.</p>
+        </div>
+      </section>
     </div>
-    <div class="skill" id="analytics-designer">
-      <span>📊 Analytics Designer</span>
-      <div class="certificate-images" style="display: none;">
-        <img src="create and use analytics reports with power bi.jpg" alt="Analytics Designer Certificate" class="certificate-img" />
-        <img src="distribute power bi insights.jpg" alt="Analytics Designer Certificate" class="certificate-img" />
+    <section class="skills" id="skills">
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      <h2 class="skills-title">My Skills</h2>
+      <div class="skills-container">
+        <div class="skill" id="programmer">
+          <span>👨‍💻 Programmer</span>
+          <div class="certificate-images" style="display: none">
+            <img
+              src="basics of python.jpg"
+              alt="Programmer Certificate"
+              class="certificate-img"
+            />
+            <img
+              src="BASICS OF R PROGRAMMING.jpg"
+              alt="Programmer Certificate"
+              class="certificate-img"
+            />
+            <img
+              src="CYBER SECURITY.jpg"
+              alt="Programmer Certificate"
+              class="certificate-img"
+            />
+            <img
+              src="develop solutions with azure ai document intelligence.jpg"
+              alt="Programmer Certificate"
+              class="certificate-img"
+            />
+            <img
+              src="GUVI_PYTHON.jpg"
+              alt="Programmer Certificate"
+              class="certificate-img"
+            />
+            <img
+              src="GuviCertification - CHATGPT FOR EVERYONE.jpg"
+              alt="Programmer Certificate"
+              class="certificate-img"
+            />
+            <img
+              src="introduction to Agile methodology.jpg"
+              alt="Programmer Certificate"
+              class="certificate-img"
+            />
+            <img
+              src="oops_page-0001.jpg"
+              alt="Programmer Certificate"
+              class="certificate-img"
+            />
+            <img
+              src="python zero to hero.jpg"
+              alt="Programmer Certificate"
+              class="certificate-img"
+            />
+            <img
+              src="software engineering and Agile software development.jpg"
+              alt="Programmer Certificate"
+              class="certificate-img"
+            />
+          </div>
+        </div>
+        <div class="skill" id="social-worker">
+          <span>🤝 Social Worker</span>
+          <div class="certificate-images" style="display: none">
+            <img
+              src="ekta resource centre for women (social internship).jpg"
+              alt="Social Worker Certificate"
+              class="certificate-img"
+            />
+          </div>
+        </div>
+        <div class="skill" id="analytics-designer">
+          <span>📊 Analytics Designer</span>
+          <div class="certificate-images" style="display: none">
+            <img
+              src="create and use analytics reports with power bi.jpg"
+              alt="Analytics Designer Certificate"
+              class="certificate-img"
+            />
+            <img
+              src="distribute power bi insights.jpg"
+              alt="Analytics Designer Certificate"
+              class="certificate-img"
+            />
+          </div>
+        </div>
+        <div class="skill" id="data-handling">
+          <span>📁 Data Handling</span>
+          <div class="certificate-images" style="display: none">
+            <img
+              src="Data base fundamentals database concepts.jpg"
+              alt="Data Handling Certificate"
+              class="certificate-img"
+            />
+            <img
+              src="DATA COLLECTION AND HANDLING.jpg"
+              alt="Data Handling Certificate"
+              class="certificate-img"
+            />
+          </div>
+        </div>
+        <div class="skill" id="sportsperson">
+          <span>🏅 Sportsperson</span>
+          <div class="certificate-images" style="display: none">
+            <img
+              src="intramural tournament (kho-kho)2nd prize.jpg"
+              alt="Sportsperson Certificate"
+              class="certificate-img"
+            />
+          </div>
+        </div>
+        <div class="skill" id="nptel-silver-medal">
+          <span>🥉 NPTEL Silver Medal</span>
+          <div class="certificate-images" style="display: none">
+            <img
+              src="Python for Data Science [ELITE SILVER].jpg"
+              alt="NPTEL Silver Medal Certificate"
+              class="certificate-img"
+            />
+          </div>
+        </div>
+        <div class="skill" id="Datathon">
+          <span>🥉 DATATHON</span>
+          <div class="certificate-images" style="display: none">
+            <img
+              src="Datathon.jpg"
+              alt="Datathon Certificate"
+              class="certificate-img"
+            />
+          </div>
+        </div>
+        <div class="skill" id="Gameathon">
+          <span>🥉 GAME-A-THON</span>
+          <div class="certificate-images" style="display: none">
+            <img
+              src="GAME_A_THON.jpg"
+              alt="GAME-A-THON Certificate"
+              class="certificate-img"
+            />
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="skill" id="data-handling">
-      <span>📁 Data Handling</span>
-      <div class="certificate-images" style="display: none;">
-        <img src="Data base fundamentals database concepts.jpg" alt="Data Handling Certificate" class="certificate-img" />
-        <img src="DATA COLLECTION AND HANDLING.jpg" alt="Data Handling Certificate" class="certificate-img" />
+      <div class="skill-description" id="skill-description">
+        <p>Select a skill to see the certificates.</p>
       </div>
-    </div>
-    <div class="skill" id="sportsperson">
-      <span>🏅 Sportsperson</span>
-      <div class="certificate-images" style="display: none;">
-        <img src="intramural tournament (kho-kho)2nd prize.jpg" alt="Sportsperson Certificate" class="certificate-img" />
+      <br /><br />
+      <section id="projects" class="projects-section">
+        <h1 class="projects-title">PROJECTS</h1>
+        <br />
+        <br /><br />
+        <div class="projects-container">
+          <div class="project-card" id="datathon">
+            <h2>Datathon 2025</h2>
+            <p>
+              Runner-Up | TSM Intra-College Datathon 2025 – Achieved Runner-Up
+              as part of Team Crazy Coders in a competitive data science
+              showdown.I participated in the Intra-College Datathon organized by
+              the Quantrix – Analytics & Consulting Club of TSM (Thiagarajar
+              School of Management, Madurai) in association with the Applied
+              Data Science Lab, held in January 2025, where our team “Crazy
+              Coders” (Faizal, Ashwin, Abzana, Subarna) secured 5th place and
+              received a cash prize of ₹1000; the event was a high-pressure,
+              data-driven challenge that tested our analytical thinking,
+              technical execution, and collaborative synergy, as we navigated
+              complex problem statements to develop impactful data science
+              solutions under tight time constraints—this runner-up recognition
+              not only highlighted our technical acumen but also celebrated our
+              grit, adaptability, and collective problem-solving spirit in a
+              competitive academic environment.
+            </p>
+          </div>
+          <div class="project-card" id="gameathon">
+            <h2>Game-a-Thon '25</h2>
+            <p>
+              I participated in Game-a-thon’25 at SRM Institute of Science and
+              Technology (Vadapalani Campus), organized by the ArrowDev Club
+              (Department of CSE ETech) on March 3, 2025, where my
+              interdisciplinary team secured 3rd place in this cutting-edge
+              hackathon-style challenge focused on game development and emerging
+              technologies; our project, which integrated innovative game
+              mechanics with real-time interactions and immersive storytelling,
+              showcased a state-of-the-art tech stack featuring front-end design
+              in [HTML,CSS,JAVASCRIPT(React.js)], while emphasizing robust team
+              collaboration from brainstorming creative concepts to delivering a
+              polished final prototype, all of which was recognized with a
+              Certificate of Participation that underscored my commitment to
+              learning, adaptability, and team-based problem-solving under tight
+              deadlines.
+            </p>
+          </div>
+          <div class="project-card" id="placement-assistance">
+            <h2>Placement Assistance Portal</h2>
+            <p>
+              I'm currently leading the development of a dynamic job placement
+              portal designed to empower students in their career pursuits. This
+              platform is tailored to facilitate daily practice through curated
+              question-and-answer sessions and hosts a weekly "Code Quest"
+              challenge, fostering consistent skill enhancement and readiness
+              for job opportunities. The primary aim is to create an engaging,
+              user-centric environment that not only streamlines the placement
+              process but also equips students with the necessary tools and
+              confidence to excel in competitive job markets. By integrating
+              structured learning paths, real-time feedback mechanisms, and
+              gamified coding challenges, the portal aspires to bridge the gap
+              between academic learning and industry expectations, ultimately
+              enhancing employability and fostering a culture of continuous
+              improvement among students.
+            </p>
+          </div>
+        </div>
+      </section>
+    </section>
+    <br /><br /><br /><br />
+    <section class="interests" id="interests">
+      <br /><br /><br /><br /><br /><br />
+      <h2 class="interests-title">My Interests</h2>
+      <br /><br /><br /><br />
+      <div class="interests-container">
+        <h2>
+          I'm an aspiring analytical designer with a strong passion for blending
+          creativity 🎨 and data-driven insights 📊 to solve problems. My love
+          for design drives me to create user-friendly and visually appealing
+          solutions, while my interest in database management helps me organize
+          and optimize data effectively. By using tools like Power BI and my
+          skills in web design 💻, I enjoy working at the intersection of design
+          and data to inform better decisions and improve user experiences. With
+          a creative flair in arts, crafts, and fashion ✨, both in academics
+          and life, I aim to continuously grow my skills and make meaningful
+          contributions in the fields of design and data management.
+        </h2>
       </div>
-    </div>
-    <div class="skill" id="nptel-silver-medal">
-      <span>🥉 NPTEL Silver Medal</span>
-      <div class="certificate-images" style="display: none;">
-        <img src="Python for Data Science [ELITE SILVER].jpg" alt="NPTEL Silver Medal Certificate" class="certificate-img" />
+    </section>
+    <section class="contact" id="contact">
+      <br /><br /><br /><br />
+      <h2 class="contact-title">Contact <span class="glow">ME</span></h2>
+      <br /><br /><br /><br />
+      <div class="contact-container">
+        <div class="contact-item">
+          <i class="bx bxl-gmail"></i>
+          <a href="mailto:abzuabzana21@gmail.com">abzuabzana21@gmail.com</a>
+        </div>
+        <div class="contact-item">
+          <i class="bx bxl-github"></i>
+          <a href="https://github.com/Abz-05" target="_blank"
+            >https://github.com/Abz-05</a
+          >
+        </div>
+        <div class="contact-item">
+          <i class="bx bxl-linkedin"></i>
+          <a
+            href="https://www.linkedin.com/in/abzana-v-51876431a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"
+            >linkedin.com/in/abzana-v-51876431a</a
+          >
+        </div>
       </div>
-    </div>
-    <div class="skill" id="Datathon">
-      <span>🥉 DATATHON</span>
-      <div class="certificate-images" style="display: none;">
-        <img src="Datathon.jpg" alt="Datathon Certificate" class="certificate-img" />
+    </section>
+    <footer class="footer">
+      <div class="footer-content">
+        <p>© 2024 Abzana . All Rights Reserved. | Privacy Policy | Contact</p>
       </div>
-    </div>
-    <div class="skill" id="Gameathon">
-      <span>🥉 GAME-A-THON</span>
-      <div class="certificate-images" style="display: none;">
-        <img src="GAME_A_THON.jpg" alt="GAME-A-THON Certificate" class="certificate-img" />
-      </div>
-    </div>
-  </div>
-  <div class="skill-description" id="skill-description">
-    <p>Select a skill to see the certificates.</p>
-  </div>
-</section>
-        <section id="projects" class="projects-section">
-  <h2 class="projects-title">Projects</h2>
-  <div class="projects-container">
-    <!-- Datathon Project -->
-    <div class="project-card" id="datathon">
-      <h3>Datathon 2025</h3>
-      <p>
-        Runner-Up | TSM Intra-College Datathon 2025 – Achieved Runner-Up as part of Team Crazy Coders in a competitive data science showdown. This experience highlighted teamwork and applied data expertise.
-      </p>
-      <!-- Optionally, add images or links here -->
-    </div>
-
-    <!-- Game-a-Thon Project -->
-    <div class="project-card" id="gameathon">
-      <h3>Game-a-Thon '25</h3>
-      <p>
-        SRM Institute of Science and Technology – Earned a Certificate of Participation in a dynamic coding and gaming challenge. This project honed innovative problem-solving skills.
-      </p>
-      <!-- Optionally, add images or links here -->
-    </div>
-
-    <!-- Placement Assistance Portal Project -->
-    <div class="project-card" id="placement-assistance">
-      <h3>Placement Assistance Portal</h3>
-      <p>
-        Currently developing a portal to streamline job placements and improve candidate matching. This project is aimed at making the placement process more efficient and user-friendly.
-      </p>
-      <!-- Optionally, add images, progress indicators, or links here -->
-    </div>
-  </div>
-</section>
-
-        <section class="interests" id="interests">
-            <br><br><br><br><br><br><h2 class="interests-title">My Interests</h2><br><br><br><br>
-            <div class="interests-container">
-                <h2>
-                    I'm an aspiring analytical designer with a strong passion for blending creativity 🎨 and data-driven insights 📊 to solve problems. My love for design drives me to create user-friendly and visually appealing solutions, while my interest in database management helps me organize and optimize data effectively. By using tools like Power BI and my skills in web design 💻, I enjoy working at the intersection of design and data to inform better decisions and improve user experiences. With a creative flair in arts, crafts, and fashion ✨, both in academics and life, I aim to continuously grow my skills and make meaningful contributions in the fields of design and data management.
-                </h2>
-            </div>
-        </section>
-        <section class="contact" id="contact">
-            <br><br><br><br>
-            <h2 class="contact-title">Contact <span class="glow">ME</span></h2>
-            <br><br><br><br>
-            <div class="contact-container">
-                <div class="contact-item">
-                  <i class='bx bxl-gmail'></i>
-                   <a href="mailto:abzuabzana21@gmail.com">abzuabzana21@gmail.com</a>
-                </div>
-                <div class="contact-item">
-                    <i class='bx bxl-github'></i>
-                    <a href="https://github.com/Abz-05" target="_blank">https://github.com/Abz-05</a>
-                </div>
-                <div class="contact-item">
-                    <i class='bx bxl-linkedin'></i>
-                    <a href="https://www.linkedin.com/in/abzana-v-51876431a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">linkedin.com/in/abzana-v-51876431a</a>
-                </div>
-            </div>
-        </section>
-        <footer class="footer">
-            <div class="footer-content">
-                <p>© 2024 Abzana . All Rights Reserved. | Privacy Policy | Contact
-                </p>
-            </div>
-        </footer>
-        <script src="script.js"></script>
-    </body>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
