@@ -88,15 +88,15 @@ const skillCertificates = {
         img: "path/to/nptel_certificate.jpg",
         description: "The NPTEL Silver Medal in Python for Data Science reflects my commitment to mastering advanced data science concepts. It highlights my expertise in applying Python for analytics."
     }
-    "nptel-silver-medal": {
+    "Datathon": {
         text: "Certificates: 1",
         img: "path/to/Datathon.jpg",
-        description: "The NPTEL Silver Medal in Python for Data Science reflects my commitment to mastering advanced data science concepts. It highlights my expertise in applying Python for analytics."
+        description: "Runner-Up | TSM Intra-College Datathon 2025--Achieved Runner-Up as part of Team Crazy Coders in a competitive data science showdown at TSM, while also securing 5th place in the Yukti TSM event. This experience underscores the strength of teamwork, mentorship, and applied data expertise."
     }
-    "nptel-silver-medal": {
+    "Gameathon": {
         text: "Certificates: 1",
         img: "path/to/GAME_A_THON.jpg",
-        description: "The NPTEL Silver Medal in Python for Data Science reflects my commitment to mastering advanced data science concepts. It highlights my expertise in applying Python for analytics."
+        description: "Game-a-thon ‘25 | SRM Institute of Science and Technology--Earned a Certificate of Participation in a dynamic coding and gaming challenge organized by ArrowDev Club at SRM Vadapalani. This event honed my innovative problem-solving skills and spotlighted my enthusiasm for creative tech solutions."
     }
 };
 
