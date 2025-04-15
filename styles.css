@@ -245,13 +245,13 @@ span {
   background-color: var(--bg-color);
   position: absolute;
   width: calc(100% + 8px);
-  height: 110%;
+  height: 102%;
   border-left: 3px solid var(--bg-color);
   right: -8px;
   animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
 }
 .text-animation span::before {
-  content: "Web Designer";
+  content: "Analyst";
   color: var(--main-color);
   animation: words 20s infinite;
 }
@@ -266,7 +266,7 @@ span {
   }
   41%,
   60% {
-    content: "Web Designer";
+    content: "Web-Designer";
   }
   61%,
   80% {
